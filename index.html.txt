@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adetayo Mathew | Physics Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ duration: 1000, once: true });
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      const topButton = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          topButton.classList.remove('hidden');
+        } else {
+          topButton.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans">
+  <header class="text-center py-10 bg-gray-900 shadow-md sticky top-0 z-50">
+    <div class="flex flex-col items-center">
+      <img src="profile.jpg" alt="Adetayo Mathew" class="w-40 h-40 mx-auto rounded-full border-4 border-blue-400 mb-4 object-cover">
+      <h1 class="text-4xl font-bold text-blue-400">Adetayo Mathew</h1>
+      <p class="text-lg text-gray-300">Applied Physics (Electronics) | Photonics | Semiconductor Research</p>
+    </div>
+    <nav class="mt-4 space-x-4 text-sm text-blue-400">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#education" class="hover:underline">Education</a>
+      <a href="#experience" class="hover:underline">Experience</a>
+      <a href="#research" class="hover:underline">Research</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#certifications" class="hover:underline">Certifications</a>
+      <a href="#resume" class="hover:underline">Resume</a>
+      <a href="#vision" class="hover:underline">Vision</a>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10 space-y-16">
+
+    <section id="about" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">About Me</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <img src="about.jpg" alt="About Adetayo Mathew" class="w-60 h-60 object-cover rounded-lg border border-gray-700">
+        <p class="text-gray-300 leading-relaxed">I am a fresh <strong>Applied Physics (Electronics)</strong> graduate from the prestigious <strong>University of Lagos, Nigeria</strong>. My academic and research background focuses on <strong>Photonics</strong>, <strong>Semiconductor Physics</strong>, and the application of <strong>Machine Learning</strong> in understanding nonlinear physical systems.<br><br>
+        My undergraduate research explored how computational modeling and data-driven algorithms can enhance predictions in chaotic physical systems. I am particularly interested in bridging the gap between <strong>experimental physics</strong> and <strong>computational intelligence</strong>, applying modern analytical tools to explore semiconductor devices, photonic materials, and nonlinear phenomena.<br><br>
+        I am passionate about developing <strong>data-driven models</strong> for complex systems and leveraging <strong>AI-driven physics simulations</strong> to advance research in photonics and semiconductor technology.</p>
+      </div>
+    </section>
+
+    <section id="education" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Education</h2>
+      <div class="bg-gray-900 p-5 rounded-xl shadow">
+        <h3 class="text-xl font-bold">University of Lagos (UNILAG), Nigeria</h3>
+        <p class="italic text-gray-400">B.Sc. in Applied Physics (Electronics) (Feb 2019 – July 2025)</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>CGPA: <strong>3.76 / 5.00</strong></li>
+          <li>Thesis: Prediction of Memristive Hypermultistability Chaotic System using Reservoir Computing</li>
+          <li>Supervisor: Dr. K.S. Ojo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Experience</h2>
+      <div class="space-y-8">
+        <div class="bg-gray-900 p-5 rounded-xl shadow flex flex-col md:flex-row md:items-center gap-6">
+          <img src="experience1.jpg" alt="CCTV Installation" class="w-52 h-52 object-cover rounded-lg border border-gray-700">
+          <div>
+            <h3 class="text-xl font-bold text-blue-300">Industrial Training – Real Image Tech, Lagos</h3>
+            <p class="text-gray-300">Worked on the installation of CCTV cameras, access control systems, and fiber optic cables across residential and commercial sites. Developed strong technical and problem-solving skills in electronic and network systems.</p>
+            <ul class="list-disc ml-6 mt-2 text-gray-300 space-y-1">
+              <li>Configured and calibrated IP camera networks for surveillance.</li>
+              <li>Installed biometric access control and attendance systems.</li>
+              <li>Performed fiber optics splicing, continuity tests, and LAN terminations.</li>
+              <li>Supported power backup installations for critical infrastructure.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mt-2">June 2023 – Dec 2024</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-5 rounded-xl shadow flex flex-col md:flex-row md:items-center gap-6">
+          <img src="experience2.jpg" alt="Data Analysis" class="w-52 h-52 object-cover rounded-lg border border-gray-700">
+          <div>
+            <h3 class="text-xl font-bold text-blue-300">Data Analyst Intern – Remote (India)</h3>
+            <p class="text-gray-300">Analyzed structured datasets using Excel, SQL, and Power BI to extract insights relevant to data-driven research and performance optimization.</p>
+            <ul class="list-disc ml-6 mt-2 text-gray-300 space-y-1">
+              <li>Performed data preprocessing and analysis for efficiency improvement.</li>
+              <li>Built interactive dashboards and visualizations to communicate insights.</li>
+              <li>Developed reporting frameworks to support project decision-making.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mt-2">April 2024 – June 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Research & Projects</h2>
+      <div class="space-y-5">
+        <div class="bg-gray-900 p-5 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-blue-300">Memristive Chaotic System Prediction</h3>
+          <p class="text-gray-300">This project investigates how machine learning can be applied to model and predict nonlinear chaotic systems in memristive devices, merging computational intelligence and applied physics.</p>
+          <a href="https://github.com/adetayomathew1/physics-project-Research/blob/main/fcc_magic.ipynb" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+        <div class="bg-gray-900 p-5 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-blue-300">Photonics & Semiconductor Exploration</h3>
+          <p class="text-gray-300">Exploring semiconductor band structures and optical interactions for potential applications in energy transfer, optoelectronics, and nanophotonics.</p>
+        </div>
+        <div class="bg-gray-900 p-5 rounded-xl shadow">
+          <h3 class="text-xl font-bold text-blue-300">Human Presence-Controlled Security System</h3>
+          <p class="text-gray-300">Designed a motion-detection-based automation system integrating smart control logic for improved safety and efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Technical Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>MATLAB</li>
+        <li>JavaScript</li>
+        <li>Power BI</li>
+        <li>R Programming</li>
+        <li>Semiconductor Circuits</li>
+        <li>Optical Systems</li>
+        <li>Fiber Optics Installation</li>
+        <li>CCTV Systems</li>
+        <li>Linux / Windows</li>
+      </ul>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Certifications</h2>
+      <ul class="list-disc ml-6 space-y-2 text-gray-300">
+        <li>Get Started with Azure Quantum — Microsoft Learn (2024)</li>
+        <li>Semiconductor Innovation & Manufacturing — Purdue University (LinkedIn, 2025)</li>
+        <li>Electronics Foundations: Semiconductor Devices — LinkedIn, Barron Stone (Updated Jun 2022, 2h 48m)</li>
+        <li>Electrical Systems: Communications and Data — LinkedIn, Christopher Randall (1h 17m)</li>
+        <li>Google Professional Data Analyst — Coursera</li>
+        <li>Introduction to Particle Accelerators — NPAP MO, Coursera (2020)</li>
+      </ul>
+    </section>
+
+    <section id="resume" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Resume</h2>
+      <p class="text-gray-300 mb-4">You can download my complete CV for more details on my education, research, and professional experience.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="Mathew_CV.pdf" download class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow">Download Resume</a>
+        <a href="Mathew_CV.pdf" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-lg shadow">View Resume Online</a>
+      </div>
+    </section>
+
+    <section id="vision" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-blue-400 mb-4">Vision</h2>
+      <p class="text-gray-300 italic">To contribute to advancing photonics and semiconductor research through computational and experimental physics, emphasizing the fusion of nonlinear dynamics, data-driven modeling, and artificial intelligence in solving complex real-world problems.</p>
+    </section>
+
+  </main>
+
+  <button id="backToTop" class="hidden fixed bottom-8 right-8 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">Top</button>
+
+  <footer class="text-center py-6 bg-gray-900 border-t border-gray-800">
+    <p class="text-gray-400 text-sm">© 2025 Adetayo Mathew. Built with Tailwind CSS and AOS animations.</p>
+  </footer>
+</body>
+</html>
